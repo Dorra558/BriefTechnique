@@ -10,6 +10,8 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/e0d7e898b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,10 +26,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">About COVID-19 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#AboutUs">About COVID-19 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Protect yourself</a>
+                        <a class="nav-link" href="#Protect">Protect yourself</a>
                     </li>
 
                     <li class="nav-item">
@@ -54,64 +56,89 @@
     <!-- section1: About Us -->
 
     <div class="container py-5">
-        <h2 class="h2-responsive ">About COVID-19</h2>
+        <h2 class="h2-responsive" id="AboutUs">About COVID-19</h2>
         <div id="titleborder" class="mr-auto mb-4"></div>
-
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div class="row pt-4">
+            <div class="col-md-6 pb-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Overview
                         </button>
-                    </h2>
-                </div>
+                            </h2>
+                        </div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
-                        <br>
-                        <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular disease,
-                            diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
-                        <br>
-                        <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into
-                            a flexed elbow).</p>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
+                                <br>
+                                <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular
+                                    disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+                                <br>
+                                <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing
+                                    into a flexed elbow).</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                            Symptoms
                         </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
+                                <p>Most common symptoms:</p>
+                                <ul>
+                                    <i class="fas fa-thermometer-full text-primary fa-2x pr-2"></i> Fever <br> <br>
+                                    <i class="fas fa-head-side-cough text-info fa-2x pr-2"></i> Dry cough <br> <br>
+                                    <i class="fas fa-tired text-danger fa-2x pr-2"></i> Tiredness
+                                </ul>
+                                <p>Less common symptoms:</p>
+                                <ul>
+                                    <li>aches and pains</li>
+                                    <li>sore throat</li>
+                                    <li>diarrhoea</li>
+                                    <li>conjunctivitis</li>
+                                    <li>headache</li>
+                                    <li>loss of taste or smell</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
-                  </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                    </div>
-                </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="http://assets.stickpng.com/images/5e8c86987f78640004528b6a.png" alt="covid img">
             </div>
         </div>
 
     </div>
+    <!-- Section2: Protect Yourself -->
 
-
+    <div class="container">
+        <h2 class="h2-responsive" id="Protect">Protect yourself</h2>
+        <div id="titleborder" class="mr-auto mb-4"></div>
+    </div>
 </body>
 
 </html>
