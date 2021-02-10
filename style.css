@@ -1,0 +1,27 @@
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.About {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.name {
+    font-size: 30px;
+}
+
+.buton {
+    border-color: #fff;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#titleborder {
+    width: 5rem;
+    background-color: #17a2b8;
+    height: 4px;
+}
